@@ -21,6 +21,7 @@ const skillGroups = [
 ];
 
 const visualProjects = [
+  { title: '8BitDo Ultimate 2C — Low-Poly Controller', type: 'Low-poly hard-surface prop', image: '/media/8bitdo-controller.jpg', className: 'wide', href: 'https://www.artstation.com/artwork/9BB2gN' },
   { title: 'Storage Room', type: 'Sci-fi environment', image: '/media/storage-room.webp', className: 'wide', href: 'https://isshan11.artstation.com/projects/lGAYRY' },
   { title: 'Tactical Knife - Hard Surface 3D Model | High & Low Poly', type: 'Weapon prop', image: '/media/tactical-knife.webp', className: '', href: 'https://isshan11.artstation.com/projects/XJADoL' },
   { title: 'Industrial Generator – Hard Surface 3D Model', type: 'Industrial prop', image: '/media/industrial-generator.webp', className: '', href: 'https://isshan11.artstation.com/projects/EzA952' },
@@ -144,12 +145,12 @@ export default function Home() {
           <p>Environment composition, hard-surface modeling, UVs, texturing, animation, and engine-ready asset preparation.</p>
         </div>
         <div className="art-grid">
-          {visualProjects.slice(0, 3).map((project, index) => <ArtCard project={project} index={index} key={project.title} />)}
+          {visualProjects.slice(0, 4).map((project, index) => <ArtCard project={project} index={index} key={project.title} />)}
         </div>
         <details className="reveal-panel art-reveal">
           <summary><span>Show more 3D work</span><span className="summary-state" aria-hidden="true" /></summary>
           <div className="art-grid reveal-content">
-            {visualProjects.slice(3).map((project, index) => <ArtCard project={project} index={index + 3} key={project.title} />)}
+            {visualProjects.slice(4).map((project, index) => <ArtCard project={project} index={index + 4} key={project.title} />)}
           </div>
         </details>
       </section>
